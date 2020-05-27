@@ -1,0 +1,91 @@
+.jumbotron {
+    background-image: url("../images/photo1.jpg");
+    height: 30em;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 0;
+}
+ /* TODO Check if the best for the active navbar is rectangle or with a border radius */
+#topheader .navbar-nav li.active > a {
+    background-color: #ae2c2c;
+    color: white;
+    border-radius: 30px 30px 30px 30px;
+}
+
+#joinButton:hover {
+    color: #ae2c2c;
+    align-items: center;
+}
+
+.br {
+    background-color: #ae2c2c;
+}
+
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+.text-r {
+    color: #ae2c2c;
+}
+
+#navbarTitle {
+    color: #ae2c2c;
+}
+
+.nav-item{
+    padding-left: 10px;
+}
+.col-info {
+    color: white;
+    display: inline-block;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+}
+
+.info-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.text-intervention{
+    padding-bottom: 2em;
+}
+
+.footer {
+    height: 180px;
+    bottom: 0;
+    width: 100%;
+}
+
+.event-soon{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.copyright-text{
+    padding-top: 90px;
+}
+.row-striped:nth-of-type(odd){
+    background-color: #efefef;
+    border-left: 4px #000000 solid;
+}
+
+.row-striped:nth-of-type(even){
+    background-color: #ffffff;
+    border-left: 4px #efefef solid;
+}
+
+.row-striped {
+    padding: 15px 0;
+}
+
+#listEngagement{
+    list-style-position: inside;
+}
+
+
+
