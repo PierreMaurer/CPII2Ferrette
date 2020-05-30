@@ -42,6 +42,11 @@
                     <li class="nav-item {{ Request::path() === 'contact' ? 'active' : '' }}">
                         <a class="nav-link" href="/contact">Contact</a>
                     </li>
+@if(Auth::check())
+                    <li class="nav-item {{ Request::path() === 'admin' ? 'active' : '' }}">
+                        <a class="nav-link" href="/admin">Administration</a>
+                        @endif
+                    </li>
                 </ul>
             </div>
         </nav>

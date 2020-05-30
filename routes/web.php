@@ -13,9 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', "WelcomeController@index");
+Route::get('/', "WelcomeController@index")->name('welcome');
 Route::get('/corps', function () {
-    return view("corps");
+
+    return view("corps", [
+        'intervention' => (new App\Intervention)->take(3)->latest()->get()
+    ]);
 });
 
 Route::get('/amicale', function () {
@@ -28,11 +31,18 @@ Route::get('/devenirSp', function () {
 
 Route::get('/contact', "ContactController@index");
 
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/admin', 'AdminController@index')
     ->name('admin')
+    ->middleware('auth');
+
+Route::get('/admin/gallery', 'GalleryController@index')
+    ->name('AdminGallery')
+    ->middleware('auth');
+
+Route::get('/admin/event', 'GalleryController@index')
+    ->name('AdminEvent')
     ->middleware('auth');

@@ -8,7 +8,7 @@
                 <h1 class="text-light">Contact</h1>
                 <hr class="bg-light">
                 <p class="text-light"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi architecto autem beatae blanditiis dicta eos eum, excepturi hic ipsa minima molestiae, odit officiis omnis qui quidem quis repellat tenetur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto asperiores est ipsa molestias nostrum odit praesentium ullam? Ab animi atque beatae culpa dolore ea illum, maxime nemo quod tempore? </p>
-
+<!-- Todo: Make the form more beautyfull -->
                 <form class="text-light">
                     <div class="form-group">
                         <label for="FirstName">Nom</label>
