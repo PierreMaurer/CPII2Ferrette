@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', "WelcomeController@index")->name('welcome');
-Route::get('/corps', 'InterventionController@index');
+Route::get('/corps', 'CorpController@index');
 
 Route::get('/amicale', function () {
     return view("amicale");
@@ -26,11 +26,18 @@ Route::get('/devenirSp', function () {
 
 Route::get('/contact', "ContactController@index");
 
-Auth::routes();
+Auth::routes([
+    'register' => false, // Registration Routes...
+    'reset' => false, // Password Reset Routes...
+    'verify' => false, // Email Verification Routes...
+]);
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/admin', 'AdminController@index')
+Route::get('/admin', function () {
+    return view('admin/adminMenu');
+})
     ->name('admin')
     ->middleware('auth');
 
@@ -42,6 +49,14 @@ Route::get('/admin/event', 'GalleryController@index')
     ->name('AdminEvent')
     ->middleware('auth');
 
-Route::get('/admin/Intervention', 'GalleryController@index')
-    ->name('AdminEvent')
+Route::get('/admin/intervention/', 'InterventionController@index')
+    ->name('AdminEventCreate')
+    ->middleware('auth');
+
+Route::get('/admin/intervention/create', 'InterventionController@create')
+    ->name('AdminEventCreate')
+    ->middleware('auth');
+
+Route::get('/admin/intervention/{id}/edit', 'InterventionController@edit')
+    ->name('AdminEventCreate')
     ->middleware('auth');

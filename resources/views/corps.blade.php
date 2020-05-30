@@ -56,7 +56,7 @@
  @foreach($intervention as $intervention)
                 <hr class="bg-light">
                 <h2>Intervention</h2>
-                <p>Adresse: {{ $intervention->city }}</p>
+                <p>Ville: {{ $intervention->city }}</p>
                 <p>Type: {{ $intervention->type_intervention }}</p>
                 <p>Date: {{ $intervention->intervention_date }}</p>
                 <p>Véhicule: {{ $intervention->vehicle }}</p>

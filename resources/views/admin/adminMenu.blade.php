@@ -24,7 +24,7 @@
                             <a class="btn btn-outline-danger" href="/admin/event">Gestion évenement</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-outline-danger" href="/admin/event">Gestion intervention</a>
+                            <a class="btn btn-outline-danger" href="/admin/intervention">Gestion intervention</a>
                         </li>
                     </ul>
                 </div>
