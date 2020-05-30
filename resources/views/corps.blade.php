@@ -40,7 +40,7 @@
             </div>
             <div class="col-4">
                 <hr class="br">
-                <p>3 880 Incendie ayant eux lieux dans le haut-Rhin ont nécessité sur 53 fois l'interventions du centre des Deux Ferrette</p>
+                <p>53 Incendie ayant eux lieux dans le haut-Rhin ont nécessité sur 3880 fois l'interventions du centre des Deux Ferrette</p>
             </div>
 
             <div class="col-4">
@@ -54,12 +54,13 @@
         <div class="col-12 text-center text-light">
             <h1 class="text-light"> Nos dernières Interventions</h1>
  @foreach($intervention as $intervention)
+                <hr class="bg-light">
                 <h2>Intervention</h2>
                 <p>Adresse: {{ $intervention->city }}</p>
                 <p>Type: {{ $intervention->type_intervention }}</p>
                 <p>Date: {{ $intervention->intervention_date }}</p>
                 <p>Véhicule: {{ $intervention->vehicle }}</p>
-                <hr class="bg-light">
+
             @endforeach
         </div>
     </div>

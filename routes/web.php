@@ -14,12 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', "WelcomeController@index")->name('welcome');
-Route::get('/corps', function () {
-
-    return view("corps", [
-        'intervention' => (new App\Intervention)->take(3)->latest()->get()
-    ]);
-});
+Route::get('/corps', 'InterventionController@index');
 
 Route::get('/amicale', function () {
     return view("amicale");
@@ -44,5 +39,9 @@ Route::get('/admin/gallery', 'GalleryController@index')
     ->middleware('auth');
 
 Route::get('/admin/event', 'GalleryController@index')
+    ->name('AdminEvent')
+    ->middleware('auth');
+
+Route::get('/admin/Intervention', 'GalleryController@index')
     ->name('AdminEvent')
     ->middleware('auth');
