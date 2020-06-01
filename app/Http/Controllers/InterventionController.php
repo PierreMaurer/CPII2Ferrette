@@ -17,10 +17,37 @@ class InterventionController extends Controller
     }
 
     public function edit(Intervention $intervention) {
-        return view('admin/editInter', compact('intervention'));
+        return view('admin/EditInter', compact('intervention'));
     }
 
     public function delete() {
         return view('admin/createInter');
+    }
+
+    public function store() {
+
+        Intervention::create($this->validateIntervention());
+
+        return redirect(route('admin.intervention'));
+    }
+
+    public function update(Intervention $intervention) {
+
+        $intervention->update($this->validateIntervention());
+
+        return view('admin/InterMenu');
+    }
+
+
+
+    public function validateIntervention(): array
+    {
+        return request()->validate([
+            'type_intervention' => 'required',
+            'city' => 'required',
+            'intervention_date' => 'required',
+            'vehicle' => 'required'
+
+        ]);
     }
 }

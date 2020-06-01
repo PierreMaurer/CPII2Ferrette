@@ -7,7 +7,7 @@
 
 
 
-            <form method="POST" action="/corps" >
+            <form method="POST" action="/admin/intervention/{{$intervention->id}}" >
                 @csrf
                 @method('PUT')
 
@@ -23,7 +23,7 @@
                     <label class="label" for="city">Ville</label>
 
                     <div class="control">
-                        <input class="input" type="text" name="city" id="city">{{ $intervention->city }}</input>
+                        <input class="input" type="text" name="city" id="city" value="{{ $intervention->city }}">
 
                     </div>
                 </div>

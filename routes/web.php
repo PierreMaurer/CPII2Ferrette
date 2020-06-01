@@ -35,28 +35,46 @@ Auth::routes([
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+//Admin Route
+
 Route::get('/admin', function () {
     return view('admin/adminMenu');
 })
     ->name('admin')
     ->middleware('auth');
 
+// Gallery Route
+
 Route::get('/admin/gallery', 'GalleryController@index')
     ->name('AdminGallery')
     ->middleware('auth');
+
+//Event Route
 
 Route::get('/admin/event', 'GalleryController@index')
     ->name('AdminEvent')
     ->middleware('auth');
 
+/// Intervention Route
+
 Route::get('/admin/intervention/', 'InterventionController@index')
-    ->name('AdminEventCreate')
+    ->name('admin.intervention')
     ->middleware('auth');
 
+//Create Intervention
 Route::get('/admin/intervention/create', 'InterventionController@create')
     ->name('AdminEventCreate')
     ->middleware('auth');
 
-Route::get('/admin/intervention/{id}/edit', 'InterventionController@edit')
-    ->name('AdminEventCreate')
+Route::post('/admin/intervention', 'InterventionController@store')
     ->middleware('auth');
+
+//Edit Intervention
+
+Route::put('/admin/intervention/{intervention}', 'InterventionController@update')
+    ->middleware('auth');
+
+Route::get('/admin/intervention/{intervention}/edit', 'InterventionController@edit')
+    ->name('intervention.edit')
+    ->middleware('auth');
+

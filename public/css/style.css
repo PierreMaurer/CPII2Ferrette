@@ -17,6 +17,16 @@
     align-items: center;
 }
 
+.MenuButton:hover {
+    color: white;
+    background-color: #ae2c2c;
+    align-items: center;
+}
+
+#CreateIntervention {
+    margin-top: 20px;
+}
+
 .br {
     background-color: #ae2c2c;
 }

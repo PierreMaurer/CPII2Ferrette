@@ -24,8 +24,8 @@
                     <p>Type: {{ $intervention->type_intervention }}</p>
                     <p>Date: {{ $intervention->intervention_date }}</p>
                     <p>Véhicule: {{ $intervention->vehicle }}</p>
-                    <a class="btn btn-outline-danger" href="/admin/intervention/{{$intervention->id}}/edit">Modifier l'intervention</a>
-                    <a class="btn btn-outline-danger" href="/admin/intervention/delete">Supprimer l'intervention</a>
+                    <a class="btn btn-outline-danger MenuButton" href="/admin/intervention/{{$intervention->id}}/edit">Modifier l'intervention</a>
+                    <a class="btn btn-outline-danger MenuButton" href="/admin/intervention/delete">Supprimer l'intervention</a>
                 @endforeach
             </div>
         </div>
