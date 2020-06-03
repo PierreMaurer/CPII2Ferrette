@@ -6,8 +6,14 @@ use Illuminate\Http\Request;
 use App\Intervention;
 class InterventionController extends Controller
 {
+    public function indexMenu() {
+        $intervention = Intervention::take(4)->latest()->get();
+        return view('admin/InterMenu', [
+            'intervention'=> $intervention]);
+    }
+
     public function index() {
-        $intervention = Intervention::take(3)->latest()->get();
+        $intervention = Intervention::paginate(4);
         return view('admin/InterMenu', [
             'intervention'=> $intervention]);
     }

@@ -17,17 +17,21 @@
             <div class="col-12 text-center text-r">
                 <h2 class="text-r">Gestion Intervention</h2>
                 <hr>
-                @foreach($intervention as $intervention)
+                @foreach($intervention as $interventions)
                     <hr class="br">
                     <h2>Intervention</h2>
-                    <p>Type: {{ $intervention->type_intervention }}</p>
-                    <p>Ville: {{ $intervention->city }}</p>
-                    <p>Date: {{ $intervention->intervention_date }}</p>
-                    <p>Véhicule du Centre: {{ $intervention->inter_vehicle }}</p>
-                    <p>Véhicule hors Centre: {{ $intervention->extra_vehicle }}</p>
-                    <a class="btn btn-outline-danger MenuButton" href="/admin/intervention/{{$intervention->id}}/edit">Modifier l'intervention</a>
-                    <a class="btn btn-outline-danger MenuButton" href="/admin/intervention/{{$intervention->id}}/delete" >Supprimer l'intervention</a>
+                    <p>Type: {{ $interventions->type_intervention }}</p>
+                    <p>Ville: {{ $interventions->city }}</p>
+                    <p>Date: {{ $interventions->intervention_date }}</p>
+                    <p>Véhicule du Centre: {{ $interventions->inter_vehicle }}</p>
+                    <p>Véhicule hors Centre: {{ $interventions->extra_vehicle }}</p>
+                    <a class="btn btn-outline-danger MenuButton" href="/admin/intervention/{{$interventions->id}}/edit">Modifier l'intervention</a>
+                    <a class="btn btn-outline-danger MenuButton" href="/admin/intervention/{{$interventions->id}}/delete" >Supprimer l'intervention</a>
                 @endforeach
+            </div>
+
+            <div class="col-12 text-center justify-content-center">
+                {{ $intervention->links() }}
             </div>
         </div>
     </div>
