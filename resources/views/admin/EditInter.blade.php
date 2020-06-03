@@ -2,7 +2,7 @@
 
 @section('content')
     <div id="wrapper">
-        <div id="page" class="container">
+        <div id="page" class="container-fluid text-light  text-center br">
             <h1 class="heading has-text-weight-bold is-size-4">Modification Intervention</h1>
 
 
@@ -15,7 +15,7 @@
                     <label class="label" for="title">Type d'intervention</label>
 
                     <div class="control">
-                        <input class="input" type="text" name="type_intervention" id="type_intervention" value="{{$intervention->type_intervention}}">
+                        <input class="input form-control" type="text" name="type_intervention" id="type_intervention" value="{{$intervention->type_intervention}}">
                     </div>
                 </div>
 
@@ -23,22 +23,38 @@
                     <label class="label" for="city">Ville</label>
 
                     <div class="control">
-                        <input class="input" type="text" name="city" id="city" value="{{ $intervention->city }}">
+                        <input class="input form-control" type="text" name="city" id="city" value="{{ $intervention->city }}">
 
                     </div>
                 </div>
 
                 <div class="field">
-                    <label class="label" for="body">Véhicule</label>
+                    <label class="label" for="inter_vehicle">Véhicule du Centre</label>
 
                     <div class="control">
-                        <input class="input" type="text" name="vehicle" id="vehicle" value="{{$intervention->vehicle}}">
+                        <input class="input form-control" type="text" name="inter_vehicle" id="inter_vehicle" value="{{$intervention->inter_vehicle}}">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label" for="extra_vehicle">Véhicule Hors Centre</label>
+
+                    <div class="control">
+                        <input class="input form-control" type="text" name="extra_vehicle" id="extra_vehicle" value="{{$intervention->extra_vehicle}}">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label" for="date">Date</label>
+
+                    <div class="control">
+                        <input type="datetime-local" name="intervention_date" class="form-control" id="intervention_date" value="{{ \Carbon\Carbon::parse($intervention->intervention_date)->format('dd-MM-yyyyThh:mm')}}}}">
                     </div>
                 </div>
 
                 <div class="field is-grouped">
                     <div class="control">
-                        <button class="button is-link" type="submit">Modifier</button>
+                        <button class="btn btn-outline-light InterventionButton" type="submit">Modifier</button>
 
 
                     </div>

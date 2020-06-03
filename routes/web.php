@@ -27,7 +27,7 @@ Route::get('/devenirSp', function () {
 Route::get('/contact', "ContactController@index");
 
 Auth::routes([
-    'register' => false, // Registration Routes...
+    'register' => true, // Registration Routes...
     'reset' => false, // Password Reset Routes...
     'verify' => false, // Email Verification Routes...
 ]);
@@ -78,3 +78,7 @@ Route::get('/admin/intervention/{intervention}/edit', 'InterventionController@ed
     ->name('intervention.edit')
     ->middleware('auth');
 
+//Delete Intervention
+
+Route::get('/admin/intervention/{intervention}/delete', 'InterventionController@delete')
+    ->middleware('auth');

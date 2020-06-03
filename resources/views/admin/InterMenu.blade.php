@@ -20,12 +20,13 @@
                 @foreach($intervention as $intervention)
                     <hr class="br">
                     <h2>Intervention</h2>
-                    <p>Ville: {{ $intervention->city }}</p>
                     <p>Type: {{ $intervention->type_intervention }}</p>
+                    <p>Ville: {{ $intervention->city }}</p>
                     <p>Date: {{ $intervention->intervention_date }}</p>
-                    <p>Véhicule: {{ $intervention->vehicle }}</p>
+                    <p>Véhicule du Centre: {{ $intervention->inter_vehicle }}</p>
+                    <p>Véhicule hors Centre: {{ $intervention->extra_vehicle }}</p>
                     <a class="btn btn-outline-danger MenuButton" href="/admin/intervention/{{$intervention->id}}/edit">Modifier l'intervention</a>
-                    <a class="btn btn-outline-danger MenuButton" href="/admin/intervention/delete">Supprimer l'intervention</a>
+                    <a class="btn btn-outline-danger MenuButton" href="/admin/intervention/{{$intervention->id}}/delete" >Supprimer l'intervention</a>
                 @endforeach
             </div>
         </div>

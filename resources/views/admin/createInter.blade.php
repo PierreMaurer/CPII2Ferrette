@@ -48,24 +48,40 @@
                 </div>
 
                 <div class="field">
-                    <label class="label" for="vehicle">Véhicule</label>
-                    @error('vehicle')
+                    <label class="label" for="inter_vehicle">Véhicule du Centre</label>
+                    @error('inter_vehicle')
                     <article class="message is-danger">
                         <div class="message-header">
                             <div class="alert alert-danger" role="alert">
-                                {{$errors->first('vehicle')}}
+                                {{$errors->first('inter_vehicle')}}
                             </div>
                         </div>
                     </article>
                     @enderror
                     <div class="control">
-                        <input type="text" class="form-control" name="vehicle" id="vehicle" value="{{old('vehicle')}}">
+                        <input type="text" class="form-control" name="inter_vehicle" id="inter_vehicle" value="{{old('inter_vehicle')}}">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label" for="extra_vehicle">Véhicule Hors Centre</label>
+                    @error('extra_vehicle')
+                    <article class="message is-danger">
+                        <div class="message-header">
+                            <div class="alert alert-danger" role="alert">
+                                {{$errors->first('extra_vehicle')}}
+                            </div>
+                        </div>
+                    </article>
+                    @enderror
+                    <div class="control">
+                        <input class="input form-control" type="text" name="extra_vehicle" id="extra_vehicle" value="{{ old('extra_vehicle') }}">
                     </div>
                 </div>
 
                 <div class="field">
                     <label class="label" for="intervention_date">Date</label>
-                    @error('vehicle')
+                    @error('intervention_date')
                     <article class="message is-danger">
                         <div class="message-header">
                             <div class="alert alert-danger" role="alert">
@@ -79,7 +95,7 @@
                         <input type="datetime-local" name="intervention_date" class="form-control" id="intervention_date" value="{{old('intervention_date')}}">
                     </div>
                 </div>
-                        <button class="btn btn-outline-light" id="CreateIntervention" type="submit">Submit</button>
+                        <button class="btn btn-outline-light InterventionButton"  type="submit">Submit</button>
 
 
 

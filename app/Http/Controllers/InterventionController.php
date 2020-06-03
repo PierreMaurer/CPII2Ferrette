@@ -20,9 +20,15 @@ class InterventionController extends Controller
         return view('admin/EditInter', compact('intervention'));
     }
 
-    public function delete() {
-        return view('admin/createInter');
+    public function delete(Intervention $intervention)
+    {
+
+
+        $intervention->delete();
+        return redirect(route('admin.intervention'));
+
     }
+
 
     public function store() {
 
@@ -35,8 +41,9 @@ class InterventionController extends Controller
 
         $intervention->update($this->validateIntervention());
 
-        return view('admin/InterMenu');
+        return $this->index();
     }
+
 
 
 
@@ -46,8 +53,8 @@ class InterventionController extends Controller
             'type_intervention' => 'required',
             'city' => 'required',
             'intervention_date' => 'required',
-            'vehicle' => 'required'
-
+            'extra_vehicle' => 'required',
+            'inter_vehicle' => 'required'
         ]);
     }
 }

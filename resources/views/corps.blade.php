@@ -56,10 +56,11 @@
  @foreach($intervention as $intervention)
                 <hr class="bg-light">
                 <h2>Intervention</h2>
-                <p>Ville: {{ $intervention->city }}</p>
                 <p>Type: {{ $intervention->type_intervention }}</p>
+                <p>Ville: {{ $intervention->city }}</p>
                 <p>Date: {{ $intervention->intervention_date }}</p>
-                <p>Véhicule: {{ $intervention->vehicle }}</p>
+                <p>Véhicule du centre: {{ $intervention->inter_vehicle }}</p>
+                <p>Véhicule hors centre: {{ $intervention->extra_vehicle }}</p>
 
             @endforeach
         </div>
@@ -76,7 +77,7 @@
     <div class="row">
         <div class="col-3">
             <div class="card" style="width: 18rem;">
-                <img src="{{ asset('images/FPT.jpg') }}" class="card-img-top" alt="...">
+                <img src="{{ asset('images/FPT2.jpg') }}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h4>Fourgon Pompe Tonne Hors Route</h4>
                     <hr class="br">
@@ -96,7 +97,7 @@
         </div>
         <div class="col-3">
             <div class="card" style="width: 18rem;">
-                <img src="{{ asset('images/FPT.jpg') }}" class="card-img-top" alt="...">
+                <img src="{{ asset('images/vlcdg1.jpg') }}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h4>Véhicule Léger Chef De Groupe</h4>
                     <hr class="br">
@@ -106,7 +107,7 @@
         </div>
         <div class="col-3">
             <div class="card" style="width: 18rem;">
-                <img src="{{ asset('images/FPT.jpg') }}" class="card-img-top" alt="...">
+                <img src="{{ asset('images/vtu.jpg') }}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h4>Véhicule Tout Usage</h4>
                     <br>
