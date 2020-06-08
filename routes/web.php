@@ -51,10 +51,27 @@ Route::get('/admin/gallery', 'GalleryController@index')
 
 //Event Route
 
-Route::get('/admin/event', 'GalleryController@index')
-    ->name('AdminEvent')
+Route::get('/admin/event', 'EventSPController@index')
+    ->name('admin.event')
     ->middleware('auth');
 
+//Delete Event
+
+Route::get('/admin/event/{event}/delete', 'EventSPController@destroy')
+    ->name('admin.eventdelete')
+    ->middleware('auth');
+
+//Create Event
+
+Route::get('/admin/event/create', 'EventSPController@create')
+    ->name('admin.event')
+    ->middleware('auth');
+
+//Store Event
+
+Route::post('/admin/event', 'EventSPController@store')
+    ->name('admin.event')
+    ->middleware('auth');
 /// Intervention Route
 
 Route::get('/admin/intervention/', 'InterventionController@index')

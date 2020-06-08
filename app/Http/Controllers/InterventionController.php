@@ -8,22 +8,22 @@ class InterventionController extends Controller
 {
     public function indexMenu() {
         $intervention = Intervention::take(4)->latest()->get();
-        return view('admin/InterMenu', [
+        return view('admin/Inter/InterMenu', [
             'intervention'=> $intervention]);
     }
 
     public function index() {
         $intervention = Intervention::paginate(4);
-        return view('admin/InterMenu', [
+        return view('admin/Inter/InterMenu', [
             'intervention'=> $intervention]);
     }
 
     public function create() {
-        return view('admin/createInter');
+        return view('admin/Inter/createInter');
     }
 
     public function edit(Intervention $intervention) {
-        return view('admin/EditInter', compact('intervention'));
+        return view('admin/Inter/EditInter', compact('intervention'));
     }
 
     public function delete(Intervention $intervention)
