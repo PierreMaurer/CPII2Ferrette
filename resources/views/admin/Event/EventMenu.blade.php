@@ -19,8 +19,7 @@
                 <hr>
                 @foreach($event as $evenement)
                     <hr class="br">
-                    <h2>Evenement</h2>
-                    <p>Titre: {{$evenement->title}}</p>
+                    <h2>{{$evenement->title}}</h2>
                     <p>Description: {{ $evenement->description }}</p>
                     <p>Adresse: {{ $evenement->Adresse }} - {{ $evenement->city }}</p>
                     <p>Date: {{ $evenement->EventDate }}</p>

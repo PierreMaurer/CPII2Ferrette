@@ -18,7 +18,7 @@
                     <hr>
                     <ul class="nav justify-content-center">
                         <li class="nav-item">
-                            <a class="btn btn-outline-danger" href="/admin/gallery">Gestion Gallerie</a>
+                            <a class="btn btn-outline-danger" href="/admin/gallery">Gestion Galerie</a>
                         </li>
                         <li class="nav-item">
                             <a class="btn btn-outline-danger" href="/admin/event">Gestion évenement</a>

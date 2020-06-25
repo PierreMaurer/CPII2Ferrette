@@ -57,7 +57,7 @@ Route::get('/admin/event', 'EventSPController@index')
 
 //Delete Event
 
-Route::get('/admin/event/{event}/delete', 'EventSPController@destroy')
+Route::get('/admin/event/{eventSP}/delete', 'EventSPController@destroy')
     ->name('admin.eventdelete')
     ->middleware('auth');
 
@@ -72,6 +72,18 @@ Route::get('/admin/event/create', 'EventSPController@create')
 Route::post('/admin/event', 'EventSPController@store')
     ->name('admin.event')
     ->middleware('auth');
+
+// Edit Event
+
+Route::get('/admin/event/{eventSP}/edit', 'EventSPController@edit')
+    ->name('admin.eventEdit')
+    ->middleware('auth');
+
+// Update Event
+
+Route::put('/admin/event/{eventSP}', 'EventSPController@update')
+    ->middleware('auth');
+
 /// Intervention Route
 
 Route::get('/admin/intervention/', 'InterventionController@index')

@@ -87,7 +87,7 @@
         </div>
         <div class="col-3">
             <div class="card" style="width: 18rem;">
-                <img src="{{ asset('images/vlhr.jpg') }}" class="card-img-top" alt="...">
+                <img src="{{ asset('images/vlhr1.jpg') }}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h4>Véhicule Léger Hors Route</h4>
                     <hr class="br">

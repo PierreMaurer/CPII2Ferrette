@@ -33,12 +33,7 @@ class EventSPController extends Controller
         return view('admin/event/EventCreate');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+
     public function store(Request $request)
     {
         EventSP::create($this->ValidateEventForm());
@@ -65,7 +60,7 @@ class EventSPController extends Controller
      */
     public function edit(EventSP $eventSP)
     {
-        //
+        return view('admin/event/EventEdit', compact('eventSP'));
     }
 
     /**
@@ -75,9 +70,12 @@ class EventSPController extends Controller
      * @param  \App\EventSP  $eventSP
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, EventSP $eventSP)
+    public function update(Request $request ,EventSP $eventSP)
     {
-        //
+        $request->update($this->ValidateEventForm());
+
+        return route('admin.event');
+        // TODO Fix: Impossible to update an Event
     }
 
     /**

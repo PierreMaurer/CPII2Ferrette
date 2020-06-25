@@ -5,7 +5,7 @@
     background-size: cover;
     margin-bottom: 0;
 }
- /* TODO Check if the best for the active navbar is rectangle or with a border radius */
+
 #topheader .navbar-nav li.active > a {
     background-color: #ae2c2c;
     color: white;
