@@ -57,7 +57,6 @@ class InterventionController extends Controller
     {
         return request()->validate([
             'type_intervention' => 'required',
-            'city' => 'required',
             'intervention_date' => 'required',
             'extra_vehicle' => 'required',
             'inter_vehicle' => 'required'

@@ -21,7 +21,6 @@
                     <hr class="br">
                     <h2>Intervention</h2>
                     <p>Type: {{ $interventions->type_intervention }}</p>
-                    <p>Ville: {{ $interventions->city }}</p>
                     <p>Date: {{ $interventions->intervention_date }}</p>
                     <p>Véhicule du Centre: {{ $interventions->inter_vehicle }}</p>
                     <p>Véhicule hors Centre: {{ $interventions->extra_vehicle }}</p>

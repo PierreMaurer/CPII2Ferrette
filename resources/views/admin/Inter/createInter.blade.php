@@ -31,23 +31,6 @@
                 </div>
 
                 <div class="field">
-                    <label class="label" for="city">Ville</label>
-                    @error('city')
-                    <article class="message is-danger">
-                        <div class="message-header">
-                            <div class="alert alert-danger" role="alert">
-                                {{$errors->first('city')}}
-                            </div>
-                        </div>
-                    </article>
-                    @enderror
-                    <div class="control">
-                        <input type="text" class="form-control" name="city" id="city" value="{{old('city')}}">
-
-                    </div>
-                </div>
-
-                <div class="field">
                     <label class="label" for="inter_vehicle">Véhicule du Centre</label>
                     @error('inter_vehicle')
                     <article class="message is-danger">

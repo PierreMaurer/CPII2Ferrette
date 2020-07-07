@@ -17,7 +17,6 @@ class CreateInterventionsTable extends Migration
             $table->id();
             $table->timestamps();
             $table->text('type_intervention');
-            $table->string('city');
             $table->dateTime('intervention_date');
             $table->string('extra_vehicle');
             $table->string('inter_vehicle');

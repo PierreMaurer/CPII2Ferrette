@@ -20,15 +20,6 @@
                 </div>
 
                 <div class="field">
-                    <label class="label" for="city">Ville</label>
-
-                    <div class="control">
-                        <input class="input form-control" type="text" name="city" id="city" value="{{ $intervention->city }}">
-
-                    </div>
-                </div>
-
-                <div class="field">
                     <label class="label" for="inter_vehicle">Véhicule du Centre</label>
 
                     <div class="control">
