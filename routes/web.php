@@ -16,9 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', "WelcomeController@index")->name('welcome');
 Route::get('/corps', 'CorpController@index');
 
-Route::get('/amicale', function () {
-    return view("amicale");
-});
+Route::get('/amicale', 'AmicaleController@index');
 
 Route::get('/devenirSp', function () {
     return view('devenirSp');
@@ -111,3 +109,8 @@ Route::get('/admin/intervention/{intervention}/edit', 'InterventionController@ed
 
 Route::get('/admin/intervention/{intervention}/delete', 'InterventionController@delete')
     ->middleware('auth');
+
+
+/// Gallery
+
+Route::get('/galerie', 'GalleryController@index');

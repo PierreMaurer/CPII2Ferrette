@@ -8,7 +8,7 @@
             <hr class="bg-light">
             <p class="text-light"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi architecto autem beatae blanditiis dicta eos eum, excepturi hic ipsa minima molestiae, odit officiis omnis qui quidem quis repellat tenetur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto asperiores est ipsa molestias nostrum odit praesentium ullam? Ab animi atque beatae culpa dolore ea illum, maxime nemo quod tempore? </p>
 
-            <a href="/"><button type="button" class="btn btn-outline-light" id="joinButton" href="/">Devenez Sapeur-Pompier</button></a>
+            <a href="/devenirSp"><button type="button" class="btn btn-outline-light" id="joinButton">Devenez Sapeur-Pompier</button></a>
         </div>
     </div>
 </div>
