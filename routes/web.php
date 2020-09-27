@@ -47,6 +47,10 @@ Route::get('/admin/gallery', 'GalleryController@index')
     ->name('AdminGallery')
     ->middleware('auth');
 
+Route::post('/admin/gallery', 'GalleryController@store')
+    ->name('AdminGallery.store')
+    ->middleware('auth');
+
 //Event Route
 
 Route::get('/admin/event', 'EventSPController@index')
@@ -114,3 +118,7 @@ Route::get('/admin/intervention/{intervention}/delete', 'InterventionController@
 /// Gallery
 
 Route::get('/galerie', 'GalleryController@index');
+
+//Gallery Menu
+
+
