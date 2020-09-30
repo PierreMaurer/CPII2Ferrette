@@ -42,13 +42,20 @@ Route::get('/admin', function () {
     ->middleware('auth');
 
 // Gallery Route
-
-Route::get('/admin/gallery', 'GalleryController@index')
+Route::get('/admin/gallery/', 'GalleryController@index')
     ->name('AdminGallery')
+    ->middleware('auth');
+
+Route::get('/admin/gallery/create', 'GalleryController@create')
+    ->name('AdminGallery.create')
     ->middleware('auth');
 
 Route::post('/admin/gallery', 'GalleryController@store')
     ->name('AdminGallery.store')
+    ->middleware('auth');
+
+Route::get('/admin/gallery/{id}/delete', 'GalleryController@delete')
+    ->name('AdminGallery.delete')
     ->middleware('auth');
 
 //Event Route
