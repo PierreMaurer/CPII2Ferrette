@@ -16,7 +16,7 @@ class GalleryController extends Controller
     }
 
     public function show() {
-        $gallery = Gallery::paginate(8);
+        $gallery = Gallery::paginate(6);
         return view('gallery/gallery', ['gallerys' => $gallery]);
     }
 

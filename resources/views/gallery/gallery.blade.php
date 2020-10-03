@@ -24,6 +24,9 @@
 
         </div>
         <br>
+        <div class="col-12 text-center justify-content-center">
+            {{ $gallerys->links() }}
+        </div>
     </div>
 
 

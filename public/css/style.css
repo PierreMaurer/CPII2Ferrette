@@ -97,5 +97,24 @@
     list-style-position: inside;
 }
 
+.pagination > li > a, .pagination > li > span {
+    color: #ae2c2c;
+}
 
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span,
+.pagination > .active > span:focus, .pagination > .active > span:hover {
+    background-color: #ae2c2c;
+    border-color: #ae2c2c;
+    color: #ae2c2c;
+}
 
+.page-item.active .page-link,
+.page-item.active:hover .page-link{
+    background-color: #ae2c2c;
+    border-color: #ae2c2c;
+    color: white;
+}
+
+.page-item:hover:not(.active) .page-link {
+    color: #ae2c2c;
+}
