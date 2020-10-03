@@ -10,6 +10,8 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/lity.min.css">
+    <script src="/js/lity.min.js"></script>
     <link rel="stylesheet" href="/css/style.css">
     @yield('header')
 </head>
