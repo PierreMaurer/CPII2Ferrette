@@ -124,7 +124,7 @@ Route::get('/admin/intervention/{intervention}/delete', 'InterventionController@
 
 /// Gallery
 
-Route::get('/galerie', 'GalleryController@index');
+Route::get('/galerie', 'GalleryController@show');
 
 //Gallery Menu
 

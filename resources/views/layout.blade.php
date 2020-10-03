@@ -33,8 +33,8 @@
                     <li class="nav-item {{ Request::path() === 'amicale' ? 'active' : '' }}">
                         <a class="nav-link" href="/amicale">L'Amicale</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Photo</a>
+                    <li class="nav-item {{ Request::path() === 'galerie' ? 'active' : '' }}">
+                        <a class="nav-link" href="/galerie">Photo</a>
                     </li>
                     <li class="nav-item {{ Request::path() === 'devenirSp' ? 'active' : '' }}">
                         <a class="nav-link" href="/devenirSp">Devenir Sapeur-Pompier</a>

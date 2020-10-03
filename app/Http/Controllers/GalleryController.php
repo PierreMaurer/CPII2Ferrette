@@ -12,8 +12,12 @@ class GalleryController extends Controller
     public function index() {
         $gallery = Gallery::paginate(4);
         return view('admin/gallery/galleryMenu', [
-            'gallery'=> $gallery]);
-        return view('admin/gallery/galleryMenu');
+            'gallerys'=> $gallery]);
+    }
+
+    public function show() {
+        $gallery = Gallery::paginate(8);
+        return view('gallery/gallery', ['gallerys' => $gallery]);
     }
 
     public function create() {
@@ -30,8 +34,15 @@ class GalleryController extends Controller
 
     }
 
-    public function delete(Gallery $gallery) {
-        Gallery::
+    public function delete($id_gallery) {
+
+        $deleted = Gallery::destroy($id_gallery);
+        if ($deleted) {
+            return redirect(route('AdminGallery'));
+        } else{
+            return 'Erreur';
+        }
+
     }
 }
 

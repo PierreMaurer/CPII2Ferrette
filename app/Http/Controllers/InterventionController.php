@@ -28,8 +28,6 @@ class InterventionController extends Controller
 
     public function delete(Intervention $intervention)
     {
-
-
         $intervention->delete();
         return redirect(route('admin.intervention'));
 

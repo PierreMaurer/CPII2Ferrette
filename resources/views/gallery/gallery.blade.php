@@ -11,14 +11,19 @@
     </div>
 
     <div class="container-fluid bg-light">
-
+<br>
 
         <div class="row">
-            <div class="col-12">
+
+            @foreach($gallerys as $gallery)
+                <div class="card col-lg-4" style="width: 20rem;">
+                    <a href="{{asset("/uploads/" . $gallery->file) }}"><img class="card-img-top" src="{{asset("/uploads/" . $gallery->file) }}"></a>
 
             </div>
+            @endforeach
 
         </div>
+        <br>
     </div>
 
 
