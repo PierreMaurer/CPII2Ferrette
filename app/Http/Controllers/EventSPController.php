@@ -86,7 +86,7 @@ class EventSPController extends Controller
      */
     public function destroy(EventSP $eventSP)
     {
-        $eventSP->delete();
+        $eventSP->delete(); 
         return redirect(route('admin.event'));
     }
 
