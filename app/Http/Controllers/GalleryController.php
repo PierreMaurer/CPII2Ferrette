@@ -30,7 +30,7 @@ class GalleryController extends Controller
         Gallery::create([
             "file" => $name
         ]);
-        Return "Image envoyées avec succès1";
+        Return redirect(route('AdminGallery'));
 
     }
 
