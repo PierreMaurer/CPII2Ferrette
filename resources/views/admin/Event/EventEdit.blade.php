@@ -3,7 +3,8 @@
 @section('content')
     <div id="wrapper">
         <div id="page" class="container-fluid text-light  text-center br">
-            <h1 class="heading has-text-weight-bold is-size-4">Modification Intervention</h1>
+
+            <h1 class="heading has-text-weight-bold is-size-4">Modification Evenement</h1>
 
 
 

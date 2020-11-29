@@ -11,6 +11,7 @@
             <div class="col-md-4 text-center">
                 <h1 class="text-light">Contact</h1>
                 <hr class="bg-light">
+                <!-- TODO: Faire description Contact -->
                 <p class="text-light"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi architecto autem beatae blanditiis dicta eos eum, excepturi hic ipsa minima molestiae, odit officiis omnis qui quidem quis repellat tenetur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto asperiores est ipsa molestias nostrum odit praesentium ullam? Ab animi atque beatae culpa dolore ea illum, maxime nemo quod tempore? </p>
 <!-- Todo: Make the form more beautyfull -->
                 <form class="text-light">
@@ -43,5 +44,24 @@
                 <h2 class="text-center text-intervention">Evenement à venir</h2>
             </div>
         </div>
+        @foreach($event as $evenement)
+            <div class="row">
+
+                <div class="col-md-2 text-right d-none d-lg-block d-xl-block">
+                    <h1 class="display-4"><span class="badge br text-light">{{ $evenement->EventDate->format('d') }}</span></h1>
+                    <h2>{{ $evenement->EventDate->format('M')}}</h2>
+                </div>
+                <div class="col-md-10">
+                    <h3 class="text-uppercase"><strong>{{ $evenement->title }}</strong></h3>
+                    <ul class="list-inline">
+                        <!-- Todo Fix: Separate the date en the time for the calendar -->
+                        <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> {{ $evenement->EventDate }}</li>
+                        <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 17H30 - 1H00</li>
+                        <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> {{ $evenement->city }} - {{$evenement->Adresse}}</li>
+                    </ul>
+                    <p>{{ $evenement->description }}.</p>
+                </div>
+            </div>
+        @endforeach
     </div>
 @endsection

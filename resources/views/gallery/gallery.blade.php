@@ -5,6 +5,7 @@
         <div class="row">
             <div class="col-12 mt-5 mb-5">
                 <h1 class="InterventionButton">Galerie Photo</h1>
+                <!-- TODO: Faire description photos -->
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, consequatur eos, esse et expedita, harum ipsum labore libero modi nam natus nostrum nulla pariatur quae quo quos repellat similique sit!</p>
             </div>
         </div>

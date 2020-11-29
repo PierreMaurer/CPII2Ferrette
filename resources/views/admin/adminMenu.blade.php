@@ -6,6 +6,7 @@
                 <div class="col-12 text-center">
                     <h1 class="text-light">Panel d'administration</h1>
                     <hr class="bg-light">
+                    <!-- TODO: Description Panel Admin -->
                     <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci distinctio fugiat fugit laborum molestias, natus veritatis. Ab adipisci, amet fuga harum incidunt possimus rem repellendus reprehenderit sapiente sed unde voluptatum.</p>
                 </div>
             </div>

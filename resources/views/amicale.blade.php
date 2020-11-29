@@ -7,6 +7,7 @@
             <div class="col-12 text-center">
                 <h1 class="text-light">L'Amicale</h1>
                 <hr class="bg-light">
+                <!-- TODO: Faire description Amicale -->
                 <p class="text-light"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi architecto autem beatae blanditiis dicta eos eum, excepturi hic ipsa minima molestiae, odit officiis omnis qui quidem quis repellat tenetur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto asperiores est ipsa molestias nostrum odit praesentium ullam? Ab animi atque beatae culpa dolore ea illum, maxime nemo quod tempore? </p>
 
                 <a href="/"><button type="button" class="btn btn-outline-light" id="joinButton" href="/">Rejoindre l'amicale</button></a>
@@ -28,8 +29,10 @@
                 <div class="card" style="width: 18rem;">
                     <img src="{{ asset('images/FPT2.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body">
+                        <!-- TODO: Faire Fiche location -->
                         <h4>Fourgon Pompe Tonne Hors Route</h4>
                         <hr class="br">
+
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
@@ -38,6 +41,7 @@
                 <div class="card" style="width: 18rem;">
                     <img src="{{ asset('images/vlhr1.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body">
+                        <!-- TODO: Faire Fiche location -->
                         <h4>Véhicule Léger Hors Route</h4>
                         <hr class="br">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -48,6 +52,7 @@
                 <div class="card" style="width: 18rem;">
                     <img src="{{ asset('images/vlcdg1.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body">
+                        <!-- TODO: Faire Fiche location -->
                         <h4>Véhicule Léger Chef De Groupe</h4>
                         <hr class="br">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -58,6 +63,7 @@
                 <div class="card" style="width: 18rem;">
                     <img src="{{ asset('images/vtu.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body">
+                        <!-- TODO: Faire Fiche location -->
                         <h4>Véhicule Tout Usage</h4>
                         <br>
                         <hr class="br">
@@ -68,7 +74,8 @@
         </div>
         <div class="row br">
             <div class="col-md-12 text-center pt-5 mb-5">
-            <h5 class="text-light">Pour effectuer une location, merci de nous contacter sur la page <a class="text-decoration-none" href="/contact">Contact</a> ou de contacter le numéro suivant: </h5>
+                <!-- TODO: Check style of this col -->
+            <p class="text-light">Pour effectuer une location, merci de nous contacter sur la page <a class="font-weight-bold text-light" href="/contact">Contact</a> ou de contacter le numéro suivant: </p>
 
             </div>
         </div>

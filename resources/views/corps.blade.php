@@ -6,6 +6,7 @@
         <div class="col-12 text-center">
             <h1 class="text-light">Le Corps</h1>
             <hr class="bg-light">
+            <!-- TODO: Faire description Corps -->
             <p class="text-light"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi architecto autem beatae blanditiis dicta eos eum, excepturi hic ipsa minima molestiae, odit officiis omnis qui quidem quis repellat tenetur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto asperiores est ipsa molestias nostrum odit praesentium ullam? Ab animi atque beatae culpa dolore ea illum, maxime nemo quod tempore? </p>
 
             <a href="/devenirSp"><button type="button" class="btn btn-outline-light" id="joinButton">Devenez Sapeur-Pompier</button></a>
@@ -24,18 +25,21 @@
             <div class="col-md-4">
                 <h3>253 Interventions de Secours</h3>
                 <hr class="br">
+                <!-- TODO: Faire Intervention Secours -->
                 <p>Les Sapeurs-Pompiers du Haut-Rhin ont fait face à 34 814 Interventions concernant du secours à victime, notre centre à participé à 253 interventions</p>
 
             </div>
             <div class="col-md-4">
                 <h3>53 Incendies</h3>
                 <hr class="br">
+                <!-- TODO: Faire Intervention Incendie -->
                 <p>53 Incendie ayant eux lieux dans le haut-Rhin ont nécessité sur 3880 fois l'interventions du centre des Deux Ferrette</p>
             </div>
 
             <div class="col-md-4">
                 <h3>97 Interventions Diverses</h3>
                 <hr class="br">
+                <!-- TODO: Faire Diverses -->
                 <p> Notre centre à été déclenché 97 fois pour des interventions diverse comme des captures d'animaux, protections des biens etc...</p>
             </div>
 
@@ -72,6 +76,7 @@
                 <div class="card-body">
                     <h4>Fourgon Pompe Tonne Hors Route</h4>
                     <hr class="br">
+                    <!-- TODO: Faire description FPTHR -->
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
@@ -82,6 +87,7 @@
                 <div class="card-body">
                     <h4>Véhicule Léger Hors Route</h4>
                     <hr class="br">
+                    <!-- TODO: Faire description VLHR -->
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
@@ -92,6 +98,7 @@
                 <div class="card-body">
                     <h4>Véhicule Léger Chef De Groupe</h4>
                     <hr class="br">
+                    <!-- TODO: Faire description VLCDG -->
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
@@ -103,14 +110,11 @@
                     <h4>Véhicule Tout Usage</h4>
                     <br>
                     <hr class="br">
+                    <!-- TODO: Faire description VTU -->
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-
-
-
 @endsection

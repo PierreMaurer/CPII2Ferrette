@@ -6,6 +6,7 @@
                 <i class="fas fa-fire fa-3x"></i>
                 <hr class="bg-light">
                 <h2 class="text-light text-center">Interventions</h2>
+                <!-- TODO: Faire description Interventions -->
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto doloremque eius
                     eveniet explicabo facilis id illo ipsam molestiae, numquam odio officia optio quae quas, quisquam
                     quo recusandae repudiandae tempore.
@@ -15,6 +16,7 @@
                 <i class="fas fa-phone-alt fa-3x"></i>
                 <hr class="bg-light">
                 <h2 class="text-light text-center">Les Numéros d'urgences</h2>
+                <!-- TODO: Faire description Numeros d'urgence -->
                 <p>Les principaux numéros d'urgences sont le 18 pour les Sapeurs-Pompiers, le 15 pour le SAMU, le 17 pour la Police et le 112 le Numéro d'urgence Européen.
                 </p>
             </div>
@@ -22,6 +24,7 @@
                 <i class="fas fa-handshake fa-3x"></i>
                 <hr class="bg-light">
                 <h2 class="text-light text-center">L'Amicale</h2>
+                <!-- TODO: Faire description Amicale -->
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto doloremque eius
                     eveniet explicabo facilis id illo ipsam molestiae, numquam odio officia optio quae quas, quisquam
                     quo recusandae repudiandae tempore.
@@ -29,24 +32,25 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <h1 class="text-center">Nos évenements à venir !</h1>
-            <hr>
-        </div>
-    </div>
+
 </div>
 
 <!-- Todo : Remake design of the calendar -->
-    <div class="container event-soon">
+    <div class="container-fluid event-soon">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Nos évenements à venir !</h1>
+                <hr>
+            </div>
+        </div>
         @foreach($event as $evenement)
         <div class="row">
 
-            <div class="col-2 text-right d-none d-lg-block d-xl-block">
+            <div class="col-md-2 text-right d-none d-lg-block d-xl-block">
                 <h1 class="display-4"><span class="badge br text-light">{{ $evenement->EventDate->format('d') }}</span></h1>
                 <h2>{{ $evenement->EventDate->format('M')}}</h2>
             </div>
-            <div class="col-10">
+            <div class="col-md-10">
                 <h3 class="text-uppercase"><strong>{{ $evenement->title }}</strong></h3>
                 <ul class="list-inline">
                     <!-- Todo Fix: Separate the date en the time for the calendar -->
