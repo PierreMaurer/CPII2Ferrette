@@ -59,7 +59,7 @@
 </div>
 
 <div class="container-fluid info-container">
-    <div class="row">r
+    <div class="row">
         <div class="col-12 text-center">
             <h1 class="text-r text-intervention">Nos véhicules</h1>
         </div>
