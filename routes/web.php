@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,7 +12,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', "WelcomeController@index")->name('welcome');
+Route::get('/', "WelcomeController@index")
+    ->name('welcome');
+
+
 Route::get('/corps', 'CorpController@index');
 
 Route::get('/amicale', 'AmicaleController@index');

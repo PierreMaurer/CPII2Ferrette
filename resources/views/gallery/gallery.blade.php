@@ -14,11 +14,9 @@
 <br>
 
         <div class="row">
-
             @foreach($gallerys as $gallery)
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb mt-4">
                     <a href="{{"/uploads/" . $gallery->file }}" data-lity ><img class="card-img-top" src="{{asset("/uploads/" . $gallery->file) }}"></a>
-
             </div>
             @endforeach
 

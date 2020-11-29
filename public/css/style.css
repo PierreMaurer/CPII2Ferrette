@@ -1,3 +1,5 @@
+
+
 .jumbotron {
     background-image: url("../images/photo1.jpg");
     height: 30em;
@@ -66,6 +68,7 @@
     padding-bottom: 2em;
 }
 
+
 .footer {
     height: 180px;
     bottom: 0;
@@ -93,9 +96,15 @@
     padding: 15px 0;
 }
 
+
+
+/* List -> devenirSp.blade.php */
 #listEngagement{
     list-style-position: inside;
 }
+
+
+/* Coloration Pagination */
 
 .pagination > li > a, .pagination > li > span {
     color: #ae2c2c;
@@ -118,3 +127,5 @@
 .page-item:hover:not(.active) .page-link {
     color: #ae2c2c;
 }
+
+

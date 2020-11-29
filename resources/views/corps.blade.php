@@ -21,32 +21,24 @@
             </div>
 
         <div class="row text-r">
-            <div class="col-4">
+            <div class="col-md-4">
                 <h3>253 Interventions de Secours</h3>
-            </div>
-            <div class="col-4">
-                <h3>53 Incendies</h3>
-            </div>
-
-            <div class="col-4">
-                <h3>97 Interventions Diverses</h3>
-            </div>
-
-        </div>
-        <div class="row text-r">
-            <div class="col-4">
                 <hr class="br">
                 <p>Les Sapeurs-Pompiers du Haut-Rhin ont fait face à 34 814 Interventions concernant du secours à victime, notre centre à participé à 253 interventions</p>
+
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
+                <h3>53 Incendies</h3>
                 <hr class="br">
                 <p>53 Incendie ayant eux lieux dans le haut-Rhin ont nécessité sur 3880 fois l'interventions du centre des Deux Ferrette</p>
             </div>
 
-            <div class="col-4">
+            <div class="col-md-4">
+                <h3>97 Interventions Diverses</h3>
                 <hr class="br">
                 <p> Notre centre à été déclenché 97 fois pour des interventions diverse comme des captures d'animaux, protections des biens etc...</p>
             </div>
+
         </div>
     </div>
 <div class="container-fluid br info-container">
@@ -74,7 +66,7 @@
     </div>
 
     <div class="row">
-        <div class="col-3">
+        <div class="col-md-3">
             <div class="card" style="width: 18rem;">
                 <img src="{{ asset('images/FPT2.jpg') }}" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -84,7 +76,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-3">
+        <div class="col-md-3">
             <div class="card" style="width: 18rem;">
                 <img src="{{ asset('images/vlhr1.jpg') }}" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -94,7 +86,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-3">
+        <div class="col-md-3">
             <div class="card" style="width: 18rem;">
                 <img src="{{ asset('images/vlcdg1.jpg') }}" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -104,7 +96,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-3">
+        <div class="col-md-3">
             <div class="card" style="width: 18rem;">
                 <img src="{{ asset('images/vtu.jpg') }}" class="card-img-top" alt="...">
                 <div class="card-body">

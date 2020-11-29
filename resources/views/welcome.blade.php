@@ -1,8 +1,8 @@
 @extends ('layout')
 @section('content')
-    <div class="container-fluid br info-container">
-        <div class="row">
-            <div class="col-md-4 col-info">
+    <div class="container-fluid">
+        <div class="row br info-container">
+            <div class="col-md-4 col-info ml-auto">
                 <i class="fas fa-fire fa-3x"></i>
                 <hr class="bg-light">
                 <h2 class="text-light text-center">Interventions</h2>
@@ -29,22 +29,20 @@
             </div>
         </div>
     </div>
-</div>
-
-    <div class="container event-soon">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="text-center">Nos évenements à venir !</h1>
-                <hr>
-            </div>
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center">Nos évenements à venir !</h1>
+            <hr>
         </div>
     </div>
+</div>
+
 <!-- Todo : Remake design of the calendar -->
     <div class="container event-soon">
         @foreach($event as $evenement)
         <div class="row">
 
-            <div class="col-2 text-right">
+            <div class="col-2 text-right d-none d-lg-block d-xl-block">
                 <h1 class="display-4"><span class="badge br text-light">{{ $evenement->EventDate->format('d') }}</span></h1>
                 <h2>{{ $evenement->EventDate->format('M')}}</h2>
             </div>

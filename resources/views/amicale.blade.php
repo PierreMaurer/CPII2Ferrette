@@ -25,11 +25,11 @@
         </div>
         @foreach($event as $evenement)
             <div class="row">
-                <div class="col-2 text-right">
+                <div class="col-md-2 text-right d-none d-lg-block d-xl-block">
                     <h1 class="display-4"><span class="badge text-r bg-light">{{ $evenement->EventDate->format('d') }}</span></h1>
                     <h2>{{ $evenement->EventDate->format('M')}}</h2>
                 </div>
-                <div class="col-10">
+                <div class="col-md-10">
                     <h3 class="text-uppercase"><strong>{{ $evenement->title }}</strong></h3>
                     <ul class="list-inline">
                         <!-- Todo Fix: Separate the date en the time for the calendar -->
