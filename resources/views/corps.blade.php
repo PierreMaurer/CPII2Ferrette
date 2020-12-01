@@ -88,7 +88,7 @@
                     <h4>Véhicule Léger Hors Route</h4>
                     <hr class="br">
                     <!-- TODO: Faire description VLHR -->
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text ">Le Véhicule Léger Hors Route alias VLHR est un véhicule utilisés pour accéder à des routes difficilement accessible, dans le CPI Deux-Ferrette ce véhicule est utilisé pour le Prompt-Secours <br><br><br></p>
                 </div>
             </div>
         </div>
@@ -99,7 +99,7 @@
                     <h4>Véhicule Léger Chef De Groupe</h4>
                     <hr class="br">
                     <!-- TODO: Faire description VLCDG -->
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">La VLCDG alias Véhicule de Liaison Chef de Groupe est un véhicule qui est déclenché dès que 2 véhicules ont été engagés, Il est utilisé par le COS le Commandant des Opérations de Secours chargés de commandé les opérations de secours</p>
                 </div>
             </div>
         </div>
@@ -111,7 +111,7 @@
                     <br>
                     <hr class="br">
                     <!-- TODO: Faire description VTU -->
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Le véhicule Tout Usage est utilisé pour les interventions diverses types Ouverture de portes, protection des biens, ou encore capture animalière.</p>
                 </div>
             </div>
         </div>
