@@ -6,10 +6,8 @@
                 <i class="fas fa-fire fa-3x"></i>
                 <hr class="bg-light">
                 <h2 class="text-light text-center">Interventions</h2>
-                <!-- TODO: Faire description Interventions -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto doloremque eius
-                    eveniet explicabo facilis id illo ipsam molestiae, numquam odio officia optio quae quas, quisquam
-                    quo recusandae repudiandae tempore.
+                <!-- TODO: Verifier le textes Intervention -->
+                <p>Les Sapeurs-Pompiers interviennent sur de nombreuses interventions principalement du secours à victimes, des accidents de la routes, des incendies mais égalements des interventions diverses !
                 </p>
             </div>
             <div class="col-md-4 col-info">

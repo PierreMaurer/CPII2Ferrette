@@ -43,6 +43,13 @@ Route::get('/admin', function () {
     ->name('admin')
     ->middleware('auth');
 
+Route::get('/admin/logout', function () {
+    Auth::logout();
+    return view('admin/adminMenu');
+})
+    ->name('admin')
+    ->middleware('auth');
+
 // Gallery Route
 Route::get('/admin/gallery/', 'GalleryController@index')
     ->name('AdminGallery')

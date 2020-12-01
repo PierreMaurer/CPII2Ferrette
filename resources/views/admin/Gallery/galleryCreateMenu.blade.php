@@ -5,7 +5,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 br text-light text-center pt-5 pb-5">
-                <h1>Crée une intervention</h1>
+                <h1>Importer une image</h1>
                 <hr class="bg-light">
             </div>
         </div>
@@ -17,7 +17,8 @@
                     <form action="/admin/gallery" method="post" enctype="multipart/form-data">
                         <input type="file" name="img">
                         @csrf
-                        <button type="submit" class="btn btn-outline-danger">Envoyer</button>
+                        <br>
+                        <button type="submit" class=" mt-5 btn btn-outline-danger">Envoyer</button>
                     </form>
 
 

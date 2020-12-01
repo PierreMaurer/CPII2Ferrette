@@ -7,7 +7,7 @@
             <h1 class="text-light">Le Corps</h1>
             <hr class="bg-light">
             <!-- TODO: Faire description Corps -->
-            <p class="text-light"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi architecto autem beatae blanditiis dicta eos eum, excepturi hic ipsa minima molestiae, odit officiis omnis qui quidem quis repellat tenetur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto asperiores est ipsa molestias nostrum odit praesentium ullam? Ab animi atque beatae culpa dolore ea illum, maxime nemo quod tempore? </p>
+            <p class="text-light">Le Corps des Sapeurs-Pompiers des Deux-Ferrette sont situé dans un CPI, un Centre de Première Intervention. Il s'agit d'un regroupement entre le CPI de Ferrette et de Vieux-Ferrette, qui en 2013 à été intégrés au sein du Service Départementale d'Incendie et de Secours.</p>
 
             <a href="/devenirSp"><button type="button" class="btn btn-outline-light" id="joinButton">Devenez Sapeur-Pompier</button></a>
         </div>
@@ -77,7 +77,7 @@
                     <h4>Fourgon Pompe Tonne Hors Route</h4>
                     <hr class="br">
                     <!-- TODO: Faire description FPTHR -->
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Le Fourgon Pompe Tonne Hors Route est un engin pompe sur un chassis 4x4, permettant d'emprunter des routes escarpées.</p>
                 </div>
             </div>
         </div>

@@ -75,14 +75,14 @@
         <div class="row br">
             <div class="col-md-12 text-center pt-5 mb-5">
                 <!-- TODO: Check style of this col -->
-            <p class="text-light">Pour effectuer une location, merci de nous contacter sur la page <a class="font-weight-bold text-light" href="/contact">Contact</a> ou de contacter le numéro suivant: </p>
+                <p class="text-light">Pour effectuer une location, merci de nous contacter sur la page <a class="font-weight-bold text-light" href="/contact"><u>Contact</u></a> ou de contacter le numéro suivant: </p>
 
             </div>
         </div>
     </div>
 
-    <div class="container-fluid text-r">
-        <div class="row pt-3">
+    <div class="container-fluid ">
+        <div class="row text-r pt-3">
             <div class="col-12">
                 <h2 class="text-center pb-2">Evenement à venir</h2>
                 <hr class="br">

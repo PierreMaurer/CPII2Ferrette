@@ -176,7 +176,6 @@ return [
         App\Providers\RouteServiceProvider::class,
 /* Jenssegers Date */
         Jenssegers\Date\DateServiceProvider::class,
-        Jenssegers\Agent\AgentServiceProvider::class,
 
     ],
 
@@ -230,7 +229,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Date' => Jenssegers\Date\Date::class,
-        'Agent' => Jenssegers\Agent\Facades\Agent::class,
+
 
     ],
 

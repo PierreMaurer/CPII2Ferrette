@@ -27,6 +27,9 @@
                         <li class="nav-item">
                             <a class="btn btn-outline-danger" href="/admin/intervention">Gestion intervention</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="btn btn-danger" href="/admin/logout">Deconnexion</a>
+                        </li>
                     </ul>
                 </div>
             </div>
