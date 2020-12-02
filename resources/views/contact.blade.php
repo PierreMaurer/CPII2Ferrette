@@ -14,25 +14,77 @@
                 <!-- TODO: Faire description Contact -->
                 <p class="text-light"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi architecto autem beatae blanditiis dicta eos eum, excepturi hic ipsa minima molestiae, odit officiis omnis qui quidem quis repellat tenetur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto asperiores est ipsa molestias nostrum odit praesentium ullam? Ab animi atque beatae culpa dolore ea illum, maxime nemo quod tempore? </p>
 <!-- Todo: Make the form more beautyfull -->
-                <form class="text-light">
+
+
+
+                <form
+                    class="text-light"
+                    method="POST"
+                    action="/contact"
+
+                >
+                    @csrf
                     <div class="form-group">
                         <label for="FirstName">Nom</label>
-                        <input type="text" class="form-control form-control-lg">
+                        @error('name')
+                        <article class="message is-danger">
+                            <div class="message-header">
+                                <div class="alert alert-danger" role="alert">
+                                    {{$errors->first('name')}}
+                                </div>
+                            </div>
+                        </article>
+                        @enderror
+                        <input type="text" class="form-control form-control-lg" name="name">
                     </div>
 
                     <div class="form-group">
                         <label for="LastName">Prénom</label>
-                        <input type="text" class="form-control">
+                        @error('LastName')
+                        <article class="message is-danger">
+                            <div class="message-header">
+                                <div class="alert alert-danger" role="alert">
+                                    {{$errors->first('LastName')}}
+                                </div>
+                            </div>
+                        </article>
+                        @enderror
+                        <input type="text" class="form-control" name="LastName">
                     </div>
                     <div class="form-group">
                         <label for="email">Adresse mail</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        @error('email')
+                        <article class="message is-danger">
+                            <div class="message-header">
+                                <div class="alert alert-danger" role="alert">
+                                    {{$errors->first('email')}}
+                                </div>
+                            </div>
+                        </article>
+                        @enderror
+                        <input type="text" class="form-control" id="email" name="email" placeholder="name@example.com">
                     </div>
                     <div class="form-group">
                         <label for="message">Votre message</label>
-                        <textarea class="form-control" id="message" rows="3"></textarea>
+                        @error('message')
+                        <article class="message is-danger">
+                            <div class="message-header">
+                                <div class="alert alert-danger" role="alert">
+                                    {{$errors->first('message')}}
+                                </div>
+                            </div>
+                        </article>
+                        @enderror
+                        <textarea class="form-control" id="message" rows="3" name="message"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-outline-light">Envoyer</button>
+
+                        @if(session('message'))
+
+                        <div class="alert alert-light mb-5 text-r" role="alert">
+                            {{ session('message') }}
+                        </div>
+@endif
+                    <button type="submit" class="mt-3 btn btn-outline-light">Envoyer</button>
                 </form>
             </div>
         </div>

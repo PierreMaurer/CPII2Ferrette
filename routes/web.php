@@ -25,6 +25,7 @@ Route::get('/devenirSp', function () {
 });
 
 Route::get('/contact', "ContactController@index");
+Route::post('/contact', "ContactController@store");
 
 Auth::routes([
     'register' => true, // Registration Routes... TODO: Remove for Production
