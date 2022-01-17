@@ -66,7 +66,7 @@
     @yield('content')
 <footer>
     <div class="footer br">
-        <p class="text-light text-center copyright-text">© 2020 CPII Deux Ferrette. Tout droit réservé. By Pierre Maurer</p>
+        <p class="text-light text-center copyright-text">© 2020 CPII Deux Ferrette. Tout droit réservé.</p>
 
     </div>
 </footer>

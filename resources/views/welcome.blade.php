@@ -7,7 +7,7 @@
                 <hr class="bg-light">
                 <h2 class="text-light text-center">Interventions</h2>
                 <!-- TODO: Verifier le textes Intervention -->
-                <p>Les Sapeurs-Pompiers interviennent sur de nombreuses interventions principalement du secours à victimes, des accidents de la routes, des incendies mais égalements des interventions diverses !
+                <p>Les Sapeurs-Pompiers interviennent sur de nombreuses interventions principalement du secours à victimes, des accidents de la route, des incendies mais également des interventions diverses !
                 </p>
             </div>
             <div class="col-md-4 col-info">
@@ -15,7 +15,7 @@
                 <hr class="bg-light">
                 <h2 class="text-light text-center">Les Numéros d'urgences</h2>
                 <!-- TODO: Faire description Numeros d'urgence -->
-                <p>Les principaux numéros d'urgences sont le 18 pour les Sapeurs-Pompiers, le 15 pour le SAMU, le 17 pour la Police et le 112 le Numéro d'urgence Européen.
+                <p>Les principaux numéros d'urgence sont le 18 pour les Sapeurs-Pompiers, le 15 pour le SAMU, le 17 pour la Police et le 112 le Numéro d'urgence Européen.
                 </p>
             </div>
             <div class="col-md-4 col-info">

@@ -27,10 +27,10 @@
         <div class="row info-container">
             <div class="col-md-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('images/FPT2.jpg') }}" class="card-img-top" alt="...">
+                    <img src="{{ asset('images/vtu.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <!-- TODO: Faire Fiche location -->
-                        <h4>Fourgon Pompe Tonne Hors Route</h4>
+                        <h4>Remorque Frigorifique</h4>
                         <hr class="br">
 
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -39,21 +39,10 @@
             </div>
             <div class="col-md-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('images/vlhr1.jpg') }}" class="card-img-top" alt="...">
+                    <img src="{{ asset('images/vtu.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <!-- TODO: Faire Fiche location -->
-                        <h4>Véhicule Léger Hors Route</h4>
-                        <hr class="br">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('images/vlcdg1.jpg') }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <!-- TODO: Faire Fiche location -->
-                        <h4>Véhicule Léger Chef De Groupe</h4>
+                        <h4>Four à tarte flambée</h4>
                         <hr class="br">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
@@ -64,7 +53,18 @@
                     <img src="{{ asset('images/vtu.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <!-- TODO: Faire Fiche location -->
-                        <h4>Véhicule Tout Usage</h4>
+                        <h4>Barbecue</h4>
+                        <hr class="br">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ asset('images/vtu.jpg') }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <!-- TODO: Faire Fiche location -->
+                        <h4>Remorque</h4>
                         <br>
                         <hr class="br">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

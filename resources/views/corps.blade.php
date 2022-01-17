@@ -7,7 +7,7 @@
             <h1 class="text-light">Le Corps</h1>
             <hr class="bg-light">
             <!-- TODO: Faire description Corps -->
-            <p class="text-light">Le Corps des Sapeurs-Pompiers des Deux-Ferrette sont situé dans un CPI, un Centre de Première Intervention. Il s'agit d'un regroupement entre le CPI de Ferrette et de Vieux-Ferrette, qui en 2013 à été intégrés au sein du Service Départementale d'Incendie et de Secours.</p>
+            <p class="text-light">Le Corps des Sapeurs-Pompiers des Deux-Ferrette est situé dans un CPI, un Centre de Première Intervention. Il s'agit d'un regroupement entre le CPI de Ferrette et de Vieux-Ferrette, qui en 2013 à été intégré au sein du Service Départementale d'Incendie et de Secours.</p>
 
             <a href="/devenirSp"><button type="button" class="btn btn-outline-light" id="joinButton">Devenez Sapeur-Pompier</button></a>
         </div>
@@ -26,21 +26,21 @@
                 <h3>253 Interventions de Secours</h3>
                 <hr class="br">
                 <!-- TODO: Faire Intervention Secours -->
-                <p>Les Sapeurs-Pompiers du Haut-Rhin ont fait face à 34 814 Interventions concernant du secours à victime, notre centre à participé à 253 interventions</p>
+                <p>Les Sapeurs-Pompiers du Haut-Rhin ont fait face à 34 814 Interventions concernant du secours à victimes, notre centre a participé à 253 interventions</p>
 
             </div>
             <div class="col-md-4">
                 <h3>53 Incendies</h3>
                 <hr class="br">
                 <!-- TODO: Faire Intervention Incendie -->
-                <p>53 Incendie ayant eux lieux dans le haut-Rhin ont nécessité sur 3880 fois l'interventions du centre des Deux Ferrette</p>
+                <p>Le CPI Deux-Ferrette à participé à 53 incendies sur les 3880 du département</p>
             </div>
 
             <div class="col-md-4">
                 <h3>97 Interventions Diverses</h3>
                 <hr class="br">
                 <!-- TODO: Faire Diverses -->
-                <p> Notre centre à été déclenché 97 fois pour des interventions diverse comme des captures d'animaux, protections des biens etc...</p>
+                <p> Notre centre a été déclenché 97 fois pour des interventions diverse comme des captures d'animaux, protections des biens etc...</p>
             </div>
 
         </div>
@@ -77,7 +77,7 @@
                     <h4>Fourgon Pompe Tonne Hors Route</h4>
                     <hr class="br">
                     <!-- TODO: Faire description FPTHR -->
-                    <p class="card-text">Le Fourgon Pompe Tonne Hors Route est un engin pompe sur un chassis 4x4, permettant d'emprunter des routes escarpées.</p>
+                    <p class="card-text">Le Fourgon Pompe Tonne Hors Route est un engin pompe sur un châssis 4x4, permettant d'emprunter des routes escarpées.</p>
                 </div>
             </div>
         </div>

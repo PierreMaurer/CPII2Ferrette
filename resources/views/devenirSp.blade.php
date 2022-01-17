@@ -17,11 +17,11 @@
             <div class="col-12">
                 <h2 class="text-center text-intervention">Comment faire ?</h2>
                 <!-- TODO: Faire les démarches pour devenir SP -->
-                <p class="text-r text-center">Pour devenir Sapeur-Pompier contacté le centre le plus proche pour débuté le recrutements.</p>
+                <p class="text-r text-center">Pour devenir Sapeur-Pompier contacté le centre le plus proche pour débuter le recrutements.</p>
                 <ul class="text-center" id="listEngagement">
                     <li>Rendez-vous dans votre centre</li>
                     <li>Passez votre visite médicale</li>
-                    <li>Effectuez les test physique et psychique</li>
+                    <li>Effectuez les tests physique et psychique</li>
                     <li>Débutez votre intégration</li>
                     <li>Débutez vos formations</li>
                 </ul>
